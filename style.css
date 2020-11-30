@@ -1,0 +1,30 @@
+* {
+    background: linear-gradient(45deg, red, black);
+    background-size: 300% 100%;
+}
+
+.main-box {
+    width: 100%;
+    box-sizing: border-box
+}
+
+.child-box {
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    background: chocolate;
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px){
+    .child-box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .child-box{
+        width: 45%;
+    }
+}
